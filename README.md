@@ -54,6 +54,10 @@ cd ITracking
 
 Com o script completo: `.\scripts\docker-run.cmd` sem `-UseOriginal` (usa `src/extract_line.py`). Ver comentários no topo de `scripts/docker-run.ps1`.
 
+## Documentação
+
+- Transcript de sessão (contexto Git / setup): [`docs/subindo_versao_git.md`](docs/subindo_versao_git.md)
+
 ## Dados
 
 Coloca vídeos em `data/input/`. Pastas em `data/output*` são ignoradas pelo Git (geradas localmente). Datasets YOLO em `datasets/` também ficam de fora do repositório por tamanho; podes voltar a exportar do Roboflow ou anexar com [Git LFS](https://git-lfs.com/) se precisares no remoto.
