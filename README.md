@@ -1,6 +1,26 @@
-# racing-line-ai
+# ITracking
 
 Extração de traçado (racing line) a partir de vídeo aéreo estático: YOLO + tracking, trajetória em CSV, overlay em vídeo e mapa de calor.
+
+**Repositório:** [github.com/AntonioJoaoSchwartzSoares/ITracking](https://github.com/AntonioJoaoSchwartzSoares/ITracking)
+
+## Clonar
+
+```powershell
+git clone https://github.com/AntonioJoaoSchwartzSoares/ITracking.git
+cd ITracking
+```
+
+## Primeiro push (a partir da pasta local já existente)
+
+```powershell
+cd C:\Users\anton\Documents\Apex\racing-line-ai
+git remote add origin https://github.com/AntonioJoaoSchwartzSoares/ITracking.git
+git branch -M main
+git push -u origin main
+```
+
+Se `origin` já existir com outro URL: `git remote set-url origin https://github.com/AntonioJoaoSchwartzSoares/ITracking.git`
 
 ## Requisitos
 
@@ -10,7 +30,7 @@ Extração de traçado (racing line) a partir de vídeo aéreo estático: YOLO +
 ## Uso rápido (Python local)
 
 ```powershell
-cd racing-line-ai
+cd ITracking
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
@@ -28,7 +48,7 @@ Scripts principais:
 ## Docker
 
 ```powershell
-cd racing-line-ai
+cd ITracking
 .\scripts\docker-run.cmd -Video ".\data\input\seu_video.mp4" -Out ".\data\saida" --class-id -1
 ```
 
