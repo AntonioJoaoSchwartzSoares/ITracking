@@ -1,0 +1,11 @@
+.git
+**/__pycache__
+**/*.pyc
+.runs
+runs
+data
+datasets
+*.mp4
+*.avi
+*.mkv
+agent-transcripts

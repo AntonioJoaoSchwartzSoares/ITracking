@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.env
+*.egg-info/
+dist/
+build/
+
+# Dados grandes (vídeos, pesos, datasets de treino)
+*.mp4
+*.avi
+*.mkv
+*.webm
+*.mov
+*.pt
+*.onnx
+datasets/
+runs/
+
+# Saídas locais do pipeline (recriadas ao correr os scripts)
+data/output*/
+data/output_*/
+data/saida*/
+
+# Artefactos Ultralytics ao correr fora do Docker
+**/runs/detect/
+**/runs/track/
+**/runs/segment/
+
+# SO / IDE
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+*.swo
